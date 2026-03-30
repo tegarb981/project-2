@@ -1,156 +1,133 @@
 body {
-    margin: 0;
-    font-family: "Lucida Grande";
-}
-
-a{
-    text-decoration: none;
-}
-
-.container {
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.top-wrapper {
-    padding: 180px 0 100px 0;
-    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-    background-size: cover;
-    color: white;
-    text-align: center;
-}
-
-.top-wrapper h1 {
-    opacity: 0.9;
-    font-size: 45px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-}
-
-.top-wrapper p {
-    opacity: 0.7;
-    margin-bottom: 3px;
-}
-
-.btn-wrapper {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.btn-wrapper p {
-    margin: 10px 0;
-}
-
-.signup {
-    background-color: #2563eb;
-}
-
-.facebook {
-    background-color: #1d4ed8;
-    margin-right: 10px;
-}
-
-.twitter {
-    background-color: #0ea5e9;
-}
-
-.facebook,
-.twitter {
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.btn {
-    padding: 12px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
-    margin: 10px 0;
-}
-
-.btn:hover {
-    opacity: 1;
-}
-
-.fa {
-    margin-right: 5px;
-}
-
-header {
-    height: 65px;
-    width: 100%;
-    background-color: #1e293b;
-}
-
-.logo {
-    width: 124px;
-    margin-top: 20px;
-}
-
-.header-left {
-    float: left;
-}
-
-.header-right {
-    float: right;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: all 0.5s;
-}
-
-.header-right:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.header-right a {
-    line-height: 65px;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: white;
-    display: block;
-}
-
-.btn:hover {
-    opacity: 1;
-    transform: translateY(-2px);
-    transition: 0.3s;
-}
-
-body {
   margin: 0;
   font-family: "Lucida Grande";
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+/* 🔥 FIX UTAMA */
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+/* ================= HEADER ================= */
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #1e293b;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+/* ================= TOP ================= */
+.top-wrapper {
+  padding: 180px 0 100px;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+/* ================= BUTTON ================= */
+.btn-wrapper {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.signup {
+  background-color: #2563eb;
+}
+
+.facebook {
+  background-color: #1d4ed8;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #0ea5e9;
+}
+
+.facebook,
+.twitter {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* ================= LESSON ================= */
 .lesson-wrapper {
-  height: 500px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
   text-align: center;
 }
 
 .heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding: 60px 0 30px;
   color: #5f5d60;
 }
 
-.heading h2 {
-  font-weight: normal;
-}
-
+.heading h2,
 .heading h3 {
   font-weight: normal;
 }
@@ -179,6 +156,14 @@ a{
   color: #b3aeb5;
 }
 
+/* 🔥 FIX FLOAT */
+.lessons::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ================= MESSAGE ================= */
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
@@ -198,6 +183,11 @@ a{
   box-shadow: none;
 }
 
+/* ================= FOOTER ================= */
+footer {
+  padding-top: 30px;
+}
+
 footer img {
   width: 125px;
 }
@@ -207,10 +197,7 @@ footer p {
   font-size: 12px;
 }
 
-footer {
-  padding-top: 30px;
-}
-
+/* ================= RESPONSIVE ================= */
 @media (max-width: 1000px) {
   .lesson {
     width: 50%;
@@ -256,16 +243,8 @@ footer {
   footer {
     text-align: center;
   }
-}
-
-@media (max-width: 670px) {
 
   .header-right {
     display: none;
   }
-
-  .menu-icon {
-    display: block;
-  }
-
 }
